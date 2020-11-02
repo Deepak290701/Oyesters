@@ -1,0 +1,109 @@
+.breadcrumbtype {
+    display: flex;
+    flex-wrap: wrap;
+    padding: .75rem 1rem;
+    margin-bottom: 1rem;
+    list-style: none;
+    background-color: #e9ecef;
+    border-radius: .25rem;
+}
+
+
+ul,li{
+    list-style-type:none;
+    padding-left:5px;
+    margin-bottom: 0;
+}
+
+
+
+@media (min-width:770px){
+    .marking{
+        display: flex;
+    }
+    .marking:before{
+        padding-left: 5px;
+        display: inline-block;
+        padding-right: .5rem;
+        color: #6c757d;
+        content: "|";
+    }
+    .skillslist{
+        margin-left: 13px;
+    }
+    
+}
+@media (max-width:770px){
+    .skillslist{
+        display: flex;
+    
+    }
+    .cardseparations{
+        margin-bottom: 22px;
+    }
+    li{
+        margin-bottom:10px;
+        
+    }
+}
+
+.skillslist li{
+    margin:0 13px;
+    list-style-type:disc;
+}
+
+.search-sm:after{
+    top:8px !important;
+}
+
+
+
+input[type="radio"] {
+    display: none;
+  }
+input[type="radio"]:checked + .box {
+    background-color: #007e90;
+    padding:10px;
+  }
+input[type="radio"]:checked + .box span {
+    color: white;
+    transform: translateY(70px);
+  }
+input[type="radio"]:checked + .box span:before {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+.sessionlookicon{
+    margin:auto 0;
+    font-size:1.3rem;
+}
+
+.iconcolumn:focus,.iconcolumn:focus-within{
+    background-color:yellow;
+    padding:30px;
+}
+
+.iconcolumn{
+    cursor: pointer;
+}
+.emailtext{
+ height: 0;
+ overflow: hidden;
+ transition: .7s height;
+ margin-bottom: 10px;
+display: flex;
+
+}
+
+.emailcard:hover .emailtext{
+height: 30px;
+transition: .7s height;
+}
+.hiddenbutton{
+    color: black !important;
+
+}
+.hiddenbutton:hover{
+    color:purple !important
+}
